@@ -30,3 +30,5 @@ module Rails
     end
   end
 end
+
+# rails generate mailbox inbox
