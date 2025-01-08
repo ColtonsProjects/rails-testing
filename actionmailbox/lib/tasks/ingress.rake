@@ -1,5 +1,11 @@
 # frozen_string_literal: true
 
+# This Rake task file defines tasks for relaying inbound emails from different
+# mail transfer agents (MTAs) like Exim, Postfix, and Qmail to Action Mailbox.
+# Each task requires a URL and INGRESS_PASSWORD to be set in the environment
+# variables. The tasks handle the email relay process and exit with appropriate
+# status codes based on the success or failure of the relay operation.
+
 namespace :action_mailbox do
   namespace :ingress do
     task :environment do
